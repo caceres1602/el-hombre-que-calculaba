@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Problemas: El Hombre que Calculaba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>4 Problemas de El Hombre que Calculaba</h1>
+
+    <!-- Ejercicio 1: Los 35 Camellos -->
+    <div class="ejercicio">
+        <h2>Ejercicio 1 — Capítulo III: Los 35 Camellos</h2>
+        <div class="descripcion">
+            <strong>Descripción:</strong> Tres hermanos heredan camellos y deben repartirlos en mitades, tercios y novenos.
+            Beremiz añade uno prestado para que la división sea exacta y luego lo recupera.<br>
+            <strong>Entrada:</strong> Total de camellos heredados<br>
+            <strong>Salida:</strong> Camellos que recibe cada hermano y el que sobra
+        </div>
+        <label>Camellos heredados:</label>
+        <input type="number" id="camellos" value="35">
+        <button onclick="resolverCamellos()">Calcular Reparto</button>
+        <div class="resultado" id="resCamellos"></div>
+    </div>
+
+    <!-- Ejercicio 2: Los 8 Panes y 8 Monedas -->
+    <div class="ejercicio">
+        <h2>Ejercicio 2 — Capítulo IV: Los 8 Panes y las 8 Monedas</h2>
+        <div class="descripcion">
+            <strong>Descripción:</strong> Dos personas aportan 3 y 5 panes. Comparten con un tercero que paga 8 monedas.
+            El reparto justo no es 3 y 5, sino 1 y 7.<br>
+            <strong>Entrada:</strong> Panes de cada persona y monedas recibidas<br>
+            <strong>Salida:</strong> Monedas que le corresponden a cada uno
+        </div>
+        <label>Panes de la persona 1:</label>
+        <input type="number" id="panes1" value="3">
+        <label>Panes de la persona 2:</label>
+        <input type="number" id="panes2" value="5">
+        <label>Total de monedas recibidas:</label>
+        <input type="number" id="monedas" value="8">
+        <button onclick="resolverPanes()">Calcular Reparto</button>
+        <div class="resultado" id="resPanes"></div>
+    </div>
+
+    <!-- Ejercicio 3: Granos del Ajedrez -->
+    <div class="ejercicio">
+        <h2>Ejercicio 3 — Capítulo XVI: Los Granos del Ajedrez</h2>
+        <div class="descripcion">
+            <strong>Descripción:</strong> 1 grano en la casilla 1, duplicando en cada casilla siguiente. Calcular cuántos 
+            granos hay en la última casilla y en todo el tablero.<br>
+            <strong>Entrada:</strong> Número de casillas del tablero<br>
+            <strong>Salida:</strong> Granos en la última casilla y total acumulado
+        </div>
+        <label>Número de casillas:</label>
+        <input type="number" id="casillas" value="64">
+        <button onclick="resolverAjedrez()">Calcular Granos</button>
+        <div class="resultado" id="resAjedrez"></div>
+    </div>
+
+    <!-- Ejercicio 4: Las 90 Manzanas -->
+    <div class="ejercicio">
+        <h2>Ejercicio 4 — Capítulo XVII: Las 90 Manzanas</h2>
+        <div class="descripcion">
+            <strong>Descripción:</strong> Tres vendedoras tienen 50, 30 y 10 manzanas. Venden primero a 7 por 1 dinar, 
+            y el resto a precio mayor, logrando que cada una obtenga 10 dinares.<br>
+            <strong>Entrada:</strong> Manzanas de cada vendedora<br>
+            <strong>Salida:</strong> Dinero obtenido en cada etapa y resultado final
+        </div>
+        <label>Manzanas de la vendedora 1:</label>
+        <input type="number" id="m1" value="50">
+        <label>Manzanas de la vendedora 2:</label>
+        <input type="number" id="m2" value="30">
+        <label>Manzanas de la vendedora 3:</label>
+        <input type="number" id="m3" value="10">
+        <button onclick="resolverManzanas()">Calcular Venta</button>
+        <div class="resultado" id="resManzanas"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
